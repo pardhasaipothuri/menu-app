@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-content: border-box;
+            background-color: #000; /* Dark background feels premium while image loads */
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Automatically scales perfectly for any iPhone or Android screen */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- The browser will fetch this locally from Cloudflare's ultra-fast Edge network -->
+    <img src="menu.jpeg" alt="Menu" loading="eager">
+</body>
+</html>
